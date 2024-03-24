@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Voortman.Views.SockerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Voortman.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="{Binding SockerLabelText}"></Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding SockerValue}"></Label>
+
+            <Button Grid.Row="0" Grid.Column="3" Height="50" Width="Auto" HorizontalAlignment="Left" Command="{Binding SockerButtonCommand}">
+                <TextBlock Text="{Binding SockerButtonText}" />
+            </Button>
+        </Grid>
+
+    </Grid>
+
+</UserControl>

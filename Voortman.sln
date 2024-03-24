@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34526.175
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voortman", "Voortman\Voortman.csproj", "{41BEF497-365A-46DF-A830-E4C61F8FE433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{078F4690-9990-4FBD-93E1-F0F3DD192D01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{5070CCD2-3325-48B5-B326-4A1577B16906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41BEF497-365A-46DF-A830-E4C61F8FE433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BEF497-365A-46DF-A830-E4C61F8FE433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BEF497-365A-46DF-A830-E4C61F8FE433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BEF497-365A-46DF-A830-E4C61F8FE433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078F4690-9990-4FBD-93E1-F0F3DD192D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078F4690-9990-4FBD-93E1-F0F3DD192D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078F4690-9990-4FBD-93E1-F0F3DD192D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078F4690-9990-4FBD-93E1-F0F3DD192D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5070CCD2-3325-48B5-B326-4A1577B16906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5070CCD2-3325-48B5-B326-4A1577B16906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5070CCD2-3325-48B5-B326-4A1577B16906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5070CCD2-3325-48B5-B326-4A1577B16906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4164690-41E2-48EF-9282-BE5952CA4401}
+	EndGlobalSection
+EndGlobal

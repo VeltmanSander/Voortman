@@ -1,0 +1,29 @@
+﻿<Window x:Class="Voortman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Voortman.ViewModels"
+        xmlns:v="clr-namespace:Voortman.Views"        
+        xmlns:local="clr-namespace:Voortman"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:TemperatureViewModel}">
+            <v:TemperatureView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SockerViewModel}">
+            <v:SockerView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <TabControl Name="Statistics" SelectedIndex="{Binding SelectedStatisticsTab}">
+            <TabItem Header="Temperature">
+                <ContentControl x:Name="Temperature" Content="{Binding TemperatureViewModel}"/>
+            </TabItem>
+            <TabItem Header="Socker">
+                <ContentControl x:Name="Socker" Content="{Binding SockerViewModel}"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
